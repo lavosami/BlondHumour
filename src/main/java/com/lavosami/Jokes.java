@@ -7,7 +7,7 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.Random;
 
-public class Main {
+public class Jokes {
     static Document document;
 
     static {
