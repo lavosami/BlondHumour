@@ -24,9 +24,12 @@ public class Jokes {
         Random random = new Random();
 
         String str = String.valueOf(elements.get(random.nextInt(elements.size())));
+        while (str.contains("шлюха")) {
+            str = String.valueOf(elements.get(random.nextInt(elements.size())));
+        }
 
         str = str.replace("<p>", "");
-        str = str.replace("<br>", "");
+        str = str.replace("<br>", "\n");
         str = str.replace("</p>", "");
 
         return str;
