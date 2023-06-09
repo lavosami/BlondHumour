@@ -20,7 +20,7 @@ public class Jokes {
 
     static Elements elements = document.select("div.anekdot-text > p");
 
-    static public String randomMeme() {
+    static public String randomJoke() {
         Random random = new Random();
 
         String str = String.valueOf(elements.get(random.nextInt(elements.size())));
@@ -36,6 +36,6 @@ public class Jokes {
     }
 
     public static void main(String[] args) {
-        System.out.println(randomMeme());
+        System.out.println(randomJoke());
     }
 }
